@@ -4,7 +4,4 @@ This repository contains my solutions to various LeetCode problems. LeetCode is 
 
 ## Structure
 
-Each problem is organized into its own directory and contains the solution code.
-
-
-
+Each problem is organized into its own directory and contains the solution code. 
