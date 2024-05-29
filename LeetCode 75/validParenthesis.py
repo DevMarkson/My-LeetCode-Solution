@@ -17,6 +17,6 @@ def validParenthesis(s):
             stack.append(c)
     return True if not stack else False
 
-s ="()"
+s ="{([])}"
 print(validParenthesis(s))
     
