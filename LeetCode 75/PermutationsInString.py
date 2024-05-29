@@ -22,7 +22,7 @@ def permutationsInString(s1, s2):
         if matches == 26:
             return True
         
-        index = ord(s2[r]) - ord("a")
+        index = ord(s2[r]) - ord('a')
         s2Count[index] += 1
 
         if s1Count[index] == s2Count[index]:
@@ -35,11 +35,11 @@ def permutationsInString(s1, s2):
 
         if s1Count[index] == s2Count[index]:
             matches += 1
-        elif s1Count[index] + 1 == s2Count[index]:
+        elif s1Count[index] - 1 == s2Count[index]:
             matches -= 1
 
         l += 1
     return matches == 26
 
 
-print(permutationsInString("ab", "eidbaooo"))
+print(permutationsInString("abc", "bbbca"))
