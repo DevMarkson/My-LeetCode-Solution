@@ -47,5 +47,21 @@ def main():
     # Display the minimum number of coins required
     print(total_coins)
 
+
+# import re
+
+# # Define the string and the regular expression
+# input_string = "00101101"
+# regex = r"(0|1)*.(11|10)"
+
+# # Use the re.fullmatch() function to check if the entire string matches the regex
+# match = re.fullmatch(regex, input_string)
+
+# # Print the result
+# if match:
+#     print(f"The string '{input_string}' matches the regular expression '{regex}'.")
+# else:
+#     print(f"The string '{input_string}' does not match the regular expression '{regex}'.")
+
 if __name__ == "__main__":
     main()
