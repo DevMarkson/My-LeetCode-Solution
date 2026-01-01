@@ -1,13 +1,9 @@
-def repeated_strings(s, n):
-    res = ""
-    alist = ""
-    while len(res) < n:
-        res += s
-
-    for i in res[:n]:
-        if i == "a":
-            alist += i
-    return len(alist)
+def singleNums(nums):
+    for i in nums:
+        # print the index of the number that is not repeated
+        if nums.count(i) == 1:
+            print(i)
+            return i
 
 
-print(repeated_strings("ab", 11))
+singleNums([3, 2, 3, 4, 5])
