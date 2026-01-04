@@ -23,3 +23,24 @@ class Solution(object):
             if count == 4: 
                 total += pretotal
         return total
+
+
+        # optimized 
+
+        total = 0
+        for num in nums:
+            count = 0
+            pretotal = 0
+
+            # print(sqrt(num))
+            for i in range(1, int(sqrt(num)) + 1):
+                if num % i == 0:
+                    if i * i == num:
+                        pretotal += i
+                        count += 1
+                    else:
+                        pretotal += i + num // i
+                        count += 2
+            if count == 4: 
+                total += pretotal
+        return total
