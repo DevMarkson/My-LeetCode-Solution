@@ -14,4 +14,4 @@ class Solution(object):
             dy = abs(y2 - y1)
 
             total += max(dx, dy)
-        return totala
+        return total
